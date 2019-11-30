@@ -6,48 +6,64 @@ func GetDictionary() Dictionary {
 			{
 				Translations: []Translation{
 					Translation{
-						Language: "english",
+						Language: "English",
 						Word:     "cat",
 					},
 					Translation{
-						Language: "german",
+						Language: "German",
 						Word:     "katze",
+					},
+					Translation{
+						Language: "Spanish",
+						Word:     "gato",
 					},
 				},
 			},
 			{
 				Translations: []Translation{
 					Translation{
-						Language: "english",
+						Language: "English",
 						Word:     "house",
 					},
 					Translation{
-						Language: "german",
+						Language: "German",
 						Word:     "hause",
+					},
+					Translation{
+						Language: "Spanish",
+						Word:     "casa",
 					},
 				},
 			},
 			{
 				Translations: []Translation{
 					Translation{
-						Language: "english",
+						Language: "English",
 						Word:     "man",
 					},
 					Translation{
-						Language: "german",
+						Language: "German",
 						Word:     "mann",
+					},
+					Translation{
+						Language: "Spanish",
+						Word:     "hombre",
 					},
 				},
 			},
 			{
 				Translations: []Translation{
 					Translation{
-						Language: "english",
+						Language: "English",
 						Word:     "ugly",
 					},
 					Translation{
-						Language: "german",
+						Language: "German",
 						Word:     "hasslich",
+					},
+					Translation{
+						Language: "Spanish",
+						Word:     "feo",
 					},
 				},
 			},
