@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/brucebales/gocards/src/internal/languages"
 )
@@ -40,7 +41,7 @@ func german(reader *bufio.Reader) {
 	for _, w := range foreignWord.Translations {
 		if w.Language == "german" {
 			foreignVersion = w.Word
-			fmt.Println(w.Word)
+			fmt.Println("Word in German: ", w.Word)
 		}
 	}
 	fmt.Print("-> ")
@@ -51,9 +52,11 @@ func german(reader *bufio.Reader) {
 	englishWord = strings.Replace(englishWord, "\n", "", -1)
 
 	if strings.Compare(englishWord, translation) == 0 {
-		fmt.Println("Correct!")
+		fmt.Print("Correct!\n\n")
+		time.Sleep(1 * time.Second)
 	} else {
-		fmt.Println("Big oof")
+		fmt.Print("Big oof\n\n")
+		time.Sleep(1 * time.Second)
 	}
 
 	german(reader)
